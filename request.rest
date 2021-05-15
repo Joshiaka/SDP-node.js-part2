@@ -1,0 +1,91 @@
+// users record
+
+
+GET http://localhost:3000/api/users/
+
+###
+GET http://localhost:3000/api/users/JS134
+
+###
+
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "studentID" : "U157",
+    "password": "pujitha"
+}
+
+###
+
+PUT http://localhost:3000/api/users/5fc92cacaa904b06382ea4ce
+Content-Type: application/json
+
+{
+    "password" : "tum"
+}
+
+
+###
+
+DELETE  http://localhost:3000/api/users/5fc5ca96d9b09314c82d614f
+
+###
+
+//students records
+GET http://localhost:3000/api/students
+
+###
+GET http://localhost:3000/api/students/U156
+
+###
+
+POST http://localhost:3000/api/students
+Content-Type: application/json
+
+{
+    "name" : "P.Joshiaka sri",
+    "studentID": "U151",
+    "attendence" : 84,
+    "sem" : "1-2",
+    "department" : "Mech",
+    "marks" : [{"semester": "1-1", "percentage": 80, "backlogs": 0}]
+} 
+
+
+###
+DELETE  http://localhost:3000/api/students/5fc7d2c8a0143739f4259dbd
+
+
+// contact records
+###
+
+GET http://localhost:3000/api/contact/
+
+###
+GET http://localhost:3000/api/contact/joshiakapatibandla31@gmail.com
+
+###
+
+POST http://localhost:3000/api/contact
+Content-Type: application/json
+
+{
+    "Email" : "joshiakapatibandla31@gmail.com",
+    "inqriry": "details about university"
+}
+
+//###
+
+//PUT http://localhost:3000/api/users/5fb17fe6a9645320589c65b4
+//Content-Type: application/json
+
+//{
+//    "password" : "tum"
+//}
+
+
+###
+
+DELETE  http://localhost:3000/api/contact/5fc8677ab26925443836c2d9
+
